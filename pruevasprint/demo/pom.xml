@@ -1,0 +1,60 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>com.example</groupId>
+  <artifactId>demo</artifactId>
+  <packaging>jar</packaging>
+  <version>1.0-SNAPSHOT</version>
+  <name>demo</name>
+  <url>http://maven.apache.org</url>
+
+  <properties>
+    <java.version>11</java.version>
+    <spring.boot.version>2.6.4</spring.boot.version>
+  </properties>
+
+  <build>
+    <plugins>
+      <plugin>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-maven-plugin</artifactId>
+        <version>3.9.6</version>
+      </plugin>
+    </plugins>
+  </build>
+
+  <dependencies>
+    <!-- Dependencias de Spring Boot -->
+    <dependency>
+      <groupId>org.springframework.boot</groupId>
+      <artifactId>spring-boot-starter-web</artifactId>
+      <version>2.6.4</version> <!-- Reemplaza "2.6.4" con la versión de Spring Boot que estés utilizando -->
+  </dependency>
+  <dependency>
+    <groupId>org.springframework.boot</groupId>
+    <artifactId>spring-boot-starter-data-jpa</artifactId>
+    <version>2.6.4</version> <!-- Reemplaza "2.6.4" con la versión de Spring Boot que estés utilizando -->
+</dependency>
+<dependency>
+  <groupId>org.springframework.boot</groupId>
+  <artifactId>spring-boot-starter-test</artifactId>
+  <version>2.6.4</version> <!-- Reemplaza "2.6.4" con la versión de Spring Boot que estés utilizando -->
+  <scope>test</scope>
+</dependency>
+
+    <!-- Dependencia del controlador REST -->
+    <dependency>
+      <groupId>org.springframework.boot</groupId>
+      <artifactId>spring-boot-starter-validation</artifactId>
+      <version>2.6.4</version> <!-- Reemplaza "2.6.4" con la versión de Spring Boot que estés utilizando -->
+  </dependency>
+
+    <!-- Dependencia de la base de datos H2 -->
+    <dependency>
+      <groupId>com.h2database</groupId>
+      <artifactId>h2</artifactId>
+      <version>1.4.200</version> <!-- Reemplaza "1.4.200" con la versión de H2 que estés utilizando -->
+      <scope>runtime</scope>
+  </dependency>
+  </dependencies>
+</project>

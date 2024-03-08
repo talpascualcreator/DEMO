@@ -1,0 +1,16 @@
+{
+    "name": "Crear Producto",
+    "request": {
+      "method": "POST",
+      "url": "http://localhost:8080/api/productos",
+      "body": {
+        "nombre": "Producto de prueba",
+        "precio": 9.99
+      },
+      "headers": {
+        "Content-Type": "application/json"
+      }
+    },
+    "response": []
+  }
+ 
